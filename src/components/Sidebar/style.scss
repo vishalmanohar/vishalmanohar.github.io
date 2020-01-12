@@ -11,8 +11,10 @@
         &-photo {
             display: inline-block;
             margin-bottom: 0;
-            border-radius: 50%;
+            border-radius: 20%;
             background-clip: padding-box;
+            width: 120px;
+            height: unset !important;
         }
         &-title {
             font-size: $typographic-base-font-size * 1.125;

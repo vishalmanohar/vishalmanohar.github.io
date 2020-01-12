@@ -7,9 +7,8 @@ module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
-    subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    title: 'Blog by Vishal Naik',
+    subtitle: 'Co-Founder @ doctorsbazaar, Technical consultant for startups, All things tech and product.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -17,20 +16,21 @@ module.exports = {
         label: 'Articles',
         path: '/',
       },
-      {
-        label: 'About me',
-        path: '/about/',
-      },
-      {
-        label: 'Contact me',
-        path: '/contact/',
-      },
+      // {
+      //   label: 'About me',
+      //   path: '/about/',
+      // },
+      // {
+      //   label: 'Contact me',
+      //   path: '/contact/',
+      // },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'Vishal Naik',
+      email: 'vishalmanohar@gmail.com',
+      twitter: 'vishalmanohar',
+      linkedin: 'in/vishal-naik-77466714/',
       telegram: '#',
-      twitter: '#',
       github: '#',
       rss: '#',
       vk: '#',
@@ -172,5 +172,6 @@ module.exports = {
         precision: 8,
       },
     },
+    'gatsby-plugin-twitter',
   ],
 }
