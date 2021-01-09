@@ -26,14 +26,13 @@ While technical debt is most often used to refer to the design and code quality 
 Most of the usage of the term technical debt refers to issues with code quality. 
 Below are some of the things that drags down quality of code:
 
-
-####  Examples:
-* Code Smells
+#### Examples:
+* **Code Smells**
 
   These are the "Code Smells" listed exhaustively in the [Refactoring](https://martinfowler.com/books/refactoring.html) book. Smelly code is not just an eye sore for anyone who reads it but is akin to a high amp resistor to enhance features on top of, besides being a source of defects and an anchor for developer morale.
 
 
-* Duplication of business logic
+* **Duplication of business logic**
   
   Most often done for a "quick and dirty" fix but also can be caused by lack of context with the developer. 
 
@@ -41,18 +40,18 @@ Below are some of the things that drags down quality of code:
 
   Not all duplication incurs the same cost. E.g. Duplicating business logic like tax calculation in an invoicing module can be very costly since it can be source of bugs, whereas duplication of a small utility method although imperfect is not a big deal.
 
-* Hardcoding instead of driving by config
+* **Hardcoding instead of driving by config**
 
   For e.g. using a custom logic against a customer identity to meet their immediate requirements.
 
   Often used for quick fixes or implemented for proof of concept but if not attended to, can languish and affect maintainability as the customer base grows.
 
-* Lack Of Tests
+* **Lack Of Tests**
 
   Test coverage is what gives confidence to change code and lack of sufficient coverage, atleast in the important workflows of the code is a huge debt.
 
 
-* Hard to Read
+* **Hard to Read**
 
   How easy is it for a new developer to understand a piece of code and relate it to business understanding? Does the code convey the intent properly? 
   
@@ -63,7 +62,7 @@ Below are some of the things that drags down quality of code:
   How much of tribal knowledge is required for a new team member to make a low complexity change on their first week of work?
 
 
-* Lack of Observability
+* **Lack of Observability**
 
   Are you able to observe what the system is doing in a production environment?
 
@@ -110,8 +109,7 @@ A feature debt can also be a cause of the missing abstraction. Consider an examp
 
 Missing abstractions are usually due to lack of tech leadership in the team. 
 
-
-### Notes
+#### Preventing Abstraction Debt
 
 * Abstractions provide the primary leverage in software development. Developers must constantly evaluate when something needs to be abstracted at the time of development.
 
@@ -144,7 +142,7 @@ In the Java world also, the 6 month release cadence has meant faster rollout of 
 
 * Much bigger risk and effort to upgrade when the version distance is high.
 
-* Online community support for older package version dwindles the older it gets. Consider React Native. A lot of issues on their Github and Stackoverflow are so dependent on the version of the framework that if you have to overcome an issue that you are facing, it means you have to upgrade to a more recent version to even report the issue and get help.
+* Online community support for a constantly evolving package version dwindles over time. Consider React Native. A lot of issues on their Github and Stackoverflow are so dependent on the version of the framework that if you have to overcome an issue that you are facing, it means you have to upgrade to a more recent version to even report the issue and get help.
 
 * Older version API documentation might be discared. And with that you might even lose the documentation required to migrate from your current version to the next version incrementally.
 
@@ -157,12 +155,38 @@ In the Java world also, the 6 month release cadence has meant faster rollout of 
 #### Tackling Dependency Upgrade Debt
 
 * Review dependency upgrades periodically - atleast once in a quarter and create action items.
-* Use tools like [dependabot](https://dependabot.com/) 
+* Use tools like [dependabot](https://dependabot.com/) to automate dependency upgrades.
 * Keep the team aware of new releases in core packages by subscribing to RSS feeds in your Slack channel.
 
-### Infrastructure Upgrades
+### Infrastructure Debt
+
+Just like software dependency upgrade debt, your infra also needs constant upkeep.
+
+Consider, Postgres database or elastic search service or a message queue. Each of these infrastructure pieces are also evolving constantly - which is good in terms of features and performance but it also means they need to be on your radar for upgrades. 
+
+Cloud Services are also constantly evolving with a slew of new features, capabilities and products being announced every year - whether it AWS, Azure or Google Cloud.
+
+Each upgrade is an opportunity to leverage better features, performance or price that can improve your product.
+
+**Cost of insfrastructure debt**
+* Same as dependency debts
+* Even lesser optionality on managed cloud services - for e.g. RDS on AWS stops support for older end of life versions of Postgres/RDS.
+
+#### Tackling Infrastructure Debt
+* Similar to dependency upgrade debt, infrastructure upgrades must be reviewed periodically within the team.
+* Using containers to set up dependencies like DB, ElasticSearch etc locally and on CI can provide a lot of leverage to upgrade versions and go back and forth.
+* Identify and groom expertise in the team around key infrastructure. For e.g. if your product uses MongoDB, Kubernetes, ElasticSearch, each of these should have members who are proficient in them. 
+* Use a Skill Matrix in the team to identify expertise gaps and review periodically to make sure that the gaps are closing.
 
 
-### Security Threats
+### Closing Thoughts
 
+Technical debt comes in many forms. Recognizing each and planning for it helps in managing it proactively.
 
+Technical debt is a function of the quality of people in the team. 
+Are they passionate about their craft?
+Do they have a good work ethic?
+Are they curious to learn new things?
+Are they able to communicate to the leadership about technical debt and influence decisions?
+
+Finally, there is no substitute for experience and expertise in the team.
