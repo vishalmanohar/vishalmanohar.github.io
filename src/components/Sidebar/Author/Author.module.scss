@@ -4,14 +4,13 @@
 .author {
   .photo {
     background-clip: padding-box;
-    border-radius: 50%;
+    border-radius: 5%;
     display: inline-block;
-    height: 75px;
-    width: 75px;
+    width: 120px;
     @include margin-bottom(0);
 
     img {
-      border-radius: 50%;
+      border-radius: 10%;
     }
   }
 
