@@ -1,7 +1,7 @@
 {
   "title": "Blog by Vishal Naik",
   "url": "https://vishalnaik.org",
-  "subtitle": "Co-Founder @ doctorsbazaar, Technical consultant for startups, All things tech and product.",
+  "subtitle": "Ramblings of a software engineer",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "UA-73379983-2",
   "disqusShortname": "",
@@ -24,15 +24,15 @@
   "author": {
     "name": "Vishal Naik",
     "photo": "/photo.jpg",
-    "bio": "Co-Founder @ doctorsbazaar, Technical consultant for startups, All things tech and product.",
+    "bio": "",
     "contacts": {
       "rss": "",
       "email": "vishalmanohar@gmail.com",
       "github": "#",
       "facebook": "#",
       "telegram": "#",
-      "twitter": "#",
-      "linkedin": "in/vishal-naik-77466714/",
+      "twitter": "vishalmanohar",
+      "linkedin": "/vishal-naik-77466714",
       "instagram": "#",
       "mastodon": "#",
       "line": "",
