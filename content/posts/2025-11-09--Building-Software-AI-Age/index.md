@@ -21,7 +21,7 @@ In hindsight of course, it makes sense that coding agents using LLMs would be gr
 
 So well that now you can build software by just talking to AI without even having any programming experience. The era of "vibe coding" is upon us - it's just unevenly distributed.
 
-And as has been claimed: 
+And as has been claimed:
 >  The "de-nerdification of programming is now complete  - [link](https://vivekhaldar.com/articles/the-de-nerdification-of-programming/)
 
 
@@ -35,10 +35,12 @@ But as you use more, you realise, it is a tool to lean in to. And once you do th
 
 Then you know it's not something to be feared and just a tool. At least, not yet.
 
-You also realise how it is not a silver bullet for software development either. 
+You also realise how it is not a silver bullet for software development either.
 Jagged intelligence, catastrophic forgetting, lack of continuous learning and zero agency are serious gaps that mean that AI doesn't replace a software engineer.
 
 But the nature of the job has changed. AI certainly eats a lot of tasks that a programmer has to do. But that yields the human more time to work on higher leverage things.
+
+---
 
 So, where does that leave the software engineer? What skill will become more important?
 
@@ -64,6 +66,7 @@ Any work you can define and scope well and assign to a junior developer can be d
 
 When you want to analyse tradeoffs, discuss multiple approaches to a solution, LLMs with their information retrieval and reasoning can be a good way to bounce ideas, explore different solution spaces before settling in.
 
+---
 
 ## Role collapse
 
@@ -88,7 +91,7 @@ While anyone can vibe code a tool for personal use, a software that will be used
 
 ## T-shaped is back
 
-> A T-shaped engineer is a professional with deep expertise in one field (the vertical bar of the T) and a broad knowledge base across many other disciplines (the horizontal bar). This combination of specialized knowledge and versatile skills allows them to tackle complex problems, collaborate effectively, and adapt to a constantly changing technical landscape. They are highly valuable in cross-functional teams, as they can contribute to their area of expertise while also helping with tasks in other domains, preventing project bottlenecks.  
+> A T-shaped engineer is a professional with deep expertise in one field (the vertical bar of the T) and a broad knowledge base across many other disciplines (the horizontal bar). This combination of specialized knowledge and versatile skills allows them to tackle complex problems, collaborate effectively, and adapt to a constantly changing technical landscape. They are highly valuable in cross-functional teams, as they can contribute to their area of expertise while also helping with tasks in other domains, preventing project bottlenecks.
 
 While the boom cycle rewarded even shallow or surface level skills, AI forces people to raise their own bar or be ever vulnerable to the next job cut.
 
